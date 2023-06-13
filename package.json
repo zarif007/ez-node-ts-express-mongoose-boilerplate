@@ -11,11 +11,13 @@
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint --fix",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "lint-prettier": "npm run prettier:check && npm run lint:check",
+    "prettier:fix": "prettier --write .",
+    "lint-prettier:check": "npm run prettier:check && npm run lint:check",
+    "lint-prettier:fix": "npm run prettier:fix && npm run lint:fix",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.ts": "npm run lint-prettier"
+    "src/**/*.ts": "npm run lint-prettier:check && npm run lint-prettier:fix"
   },
   "repository": {
     "type": "git",
