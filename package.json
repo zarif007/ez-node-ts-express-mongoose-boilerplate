@@ -17,7 +17,7 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.ts": "npm run lint-prettier:check && npm run lint-prettier:fix"
+    "src/**/*.ts": "npm run lint-prettier:check"
   },
   "repository": {
     "type": "git",
