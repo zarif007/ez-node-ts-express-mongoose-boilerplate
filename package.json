@@ -10,7 +10,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint --fix",
-    "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+    "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "lint-prettier": "npm run prettier:check && npm run lint:check",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.ts": "npm run lint-prettier"
   },
   "repository": {
     "type": "git",
@@ -31,6 +36,7 @@
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "typescript": "^5.1.3"
   },
