@@ -1,18 +1,20 @@
 import mongoose from 'mongoose'
 import envConfig from './config/envConfig'
 import app from './app'
+import { infoLogger, errorLogger } from './shared/logger'
 
 const main = async () => {
   try {
     await mongoose.connect(envConfig.database_url as string)
-    console.log(`🤩 Database is connected`)
+    infoLogger.info(`🤩 Database is connected`)
 
     app.listen(envConfig.PORT, () => {
-      console.log(`App is listening on PORT ${envConfig.PORT}`)
-      console.log(`Process ID ${process.pid}`)
+      infoLogger.info(
+        `App is listening on PORT ${envConfig.PORT} & Process ID ${process.pid}`
+      )
     })
   } catch (err) {
-    console.log(`Failed to connect to Database ${err}`)
+    errorLogger.error(`Failed to connect to Database ${err}`)
   }
 }
 

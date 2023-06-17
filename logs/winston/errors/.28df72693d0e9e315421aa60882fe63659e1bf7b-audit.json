@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\.28df72693d0e9e315421aa60882fe63659e1bf7b-audit.json",
+    "files": [
+        {
+            "date": 1687016821885,
+            "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\[2023-06-17-21]-error.log",
+            "hash": "b345817c76bc33b010915c9eaeb8aaa25e1cbdb10988a67e918112259c2f0ba5"
+        }
+    ],
+    "hashType": "sha256"
+}

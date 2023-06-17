@@ -1,0 +1,54 @@
+{"level":"info","message":"🤩 Database is connected"}
+{"level":"info","message":"App is listening on PORT 5000 & Process ID 2948"}
+{"level":"info","message":"🤩 Database is connected"}
+{"level":"info","message":"App is listening on PORT 5000 & Process ID 2036"}
+{"level":"info","message":"🤩 Database is connected"}
+{"level":"info","message":"App is listening on PORT 5000 & Process ID 4192"}
+{"level":"info","message":"🤩 Database is connected"}
+{"level":"info","message":"App is listening on PORT 5000 & Process ID 3292"}
+2023-06-17T15:09:17.533Z [right meow!] info: 🤩 Database is connected
+2023-06-17T15:09:17.537Z [right meow!] info: App is listening on PORT 5000 & Process ID 4236
+2023-06-17T15:10:04.615Z [crazy!] info: 🤩 Database is connected
+2023-06-17T15:10:04.620Z [crazy!] info: App is listening on PORT 5000 & Process ID 7772
+{
+  message: '🤩 Database is connected',
+  level: 'info',
+  label: 'crazy!',
+  timestamp: '2023-06-17T15:12:13.182Z'
+}
+{
+  message: 'App is listening on PORT 5000 & Process ID 1464',
+  level: 'info',
+  label: 'crazy!',
+  timestamp: '2023-06-17T15:12:13.189Z'
+}
+{
+  message: '🤩 Database is connected',
+  level: 'info',
+  label: 'crazy!',
+  timestamp: '2023-06-17T15:14:09.943Z'
+}
+{
+  message: 'App is listening on PORT 5000 & Process ID 8864',
+  level: 'info',
+  label: 'crazy!',
+  timestamp: '2023-06-17T15:14:09.951Z'
+}
+[Sat Jun 17 2023 21:15:45 GMT+0600 (Bangladesh Standard Time) at 21:15:45] [crazy!] info: 🤩 Database is connected
+[Sat Jun 17 2023 21:15:45 GMT+0600 (Bangladesh Standard Time) at 21:15:45] [crazy!] info: App is listening on PORT 5000 & Process ID 4772
+[Sat Jun 17 2023 21:15:50 GMT+0600 (Bangladesh Standard Time) at 21:15:50] [crazy!] info: 🤩 Database is connected
+[Sat Jun 17 2023 21:15:50 GMT+0600 (Bangladesh Standard Time) at 21:15:50] [crazy!] info: App is listening on PORT 5000 & Process ID 11392
+[Sat Jun 17 2023 at 21:16:14] [crazy!] info: 🤩 Database is connected
+[Sat Jun 17 2023 at 21:16:14] [crazy!] info: App is listening on PORT 5000 & Process ID 11128
+[Sat Jun 17 2023 at 21:16:36] [crazy!] info: 🤩 Database is connected
+[Sat Jun 17 2023 at 21:16:36] [crazy!] info: App is listening on PORT 5000 & Process ID 13872
+[Sat Jun 17 2023 at 21:18:25] [crazy!] [32minfo[39m: 🤩 Database is connected
+[Sat Jun 17 2023 at 21:18:25] [crazy!] [32minfo[39m: App is listening on PORT 5000 & Process ID 1216
+[Sat Jun 17 2023 at 21:18:39] [crazy!] [32minfo[39m: 🤩 Database is connected
+[Sat Jun 17 2023 at 21:18:39] [crazy!] [32minfo[39m: App is listening on PORT 5000 & Process ID 14276
+[Sat Jun 17 2023 at 21:19:14] [crazy!] [32minfo[39m: 🤩 Database is connected
+[Sat Jun 17 2023 at 21:19:14] [crazy!] [32minfo[39m: App is listening on PORT 5000 & Process ID 12520
+[Sat Jun 17 2023 at 21:46:59] [crazy!] [32minfo[39m: 🤩 Database is connected
+[Sat Jun 17 2023 at 21:46:59] [crazy!] [32minfo[39m: App is listening on PORT 5000 & Process ID 11532
+[Sat Jun 17 2023 at 21:47:8] [crazy!] [32minfo[39m: 🤩 Database is connected
+[Sat Jun 17 2023 at 21:47:8] [crazy!] [32minfo[39m: App is listening on PORT 5000 & Process ID 14568
