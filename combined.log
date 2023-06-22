@@ -1,9 +1,0 @@
-{"level":"info","message":"🤩 Database is connected"}
-{"level":"info","message":"App is listening on PORT 5000 & Process ID 13156"}
-{"level":"error","message":"Failed to connect to Database MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
-{"level":"info","message":"🤩 Database is connected"}
-{"level":"info","message":"App is listening on PORT 5000 & Process ID 11644"}
-{"level":"info","message":"🤩 Database is connected"}
-{"level":"info","message":"App is listening on PORT 5000 & Process ID 9012"}
-{"level":"info","message":"🤩 Database is connected"}
-{"level":"info","message":"App is listening on PORT 5000 & Process ID 12396"}
