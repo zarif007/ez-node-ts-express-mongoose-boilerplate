@@ -1,25 +1,25 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\.28df72693d0e9e315421aa60882fe63659e1bf7b-audit.json",
+  "files": [
+    {
+      "date": 1687016821885,
+      "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\[2023-06-17-21]-error.log",
+      "hash": "b345817c76bc33b010915c9eaeb8aaa25e1cbdb10988a67e918112259c2f0ba5"
     },
-    "auditLog": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\.28df72693d0e9e315421aa60882fe63659e1bf7b-audit.json",
-    "files": [
-        {
-            "date": 1687016821885,
-            "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\[2023-06-17-21]-error.log",
-            "hash": "b345817c76bc33b010915c9eaeb8aaa25e1cbdb10988a67e918112259c2f0ba5"
-        },
-        {
-            "date": 1687183296664,
-            "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\[2023-06-19-20]-error.log",
-            "hash": "43b7c354c0466303f10c2fd85d5b64b935c5912cf4f24d4bcb88891d2f5c6c3c"
-        },
-        {
-            "date": 1687194695938,
-            "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\[2023-06-19-23]-error.log",
-            "hash": "f4a85ac308d6d28ea85fa280d1040aafda17f91ad752cce7552b8540545dda44"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1687183296664,
+      "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\[2023-06-19-20]-error.log",
+      "hash": "43b7c354c0466303f10c2fd85d5b64b935c5912cf4f24d4bcb88891d2f5c6c3c"
+    },
+    {
+      "date": 1687194695938,
+      "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\errors\\[2023-06-19-23]-error.log",
+      "hash": "f4a85ac308d6d28ea85fa280d1040aafda17f91ad752cce7552b8540545dda44"
+    }
+  ],
+  "hashType": "sha256"
 }

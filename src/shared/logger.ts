@@ -1,7 +1,7 @@
-import path from 'path'
-import { createLogger, format, transports } from 'winston'
-import DailyRotateFile from 'winston-daily-rotate-file'
-const { combine, timestamp, label, printf } = format
+import path from 'path';
+import { createLogger, format, transports } from 'winston';
+import DailyRotateFile from 'winston-daily-rotate-file';
+const { combine, timestamp, label, printf } = format;
 
 const transportsCreator = (level: 'info' | 'error') => [
   new transports.Console(),
@@ -19,15 +19,15 @@ const transportsCreator = (level: 'info' | 'error') => [
     maxFiles: '14d',
   }),
   new transports.File({ filename: `${level}.log` }),
-]
+];
 
 const myFormat = printf(({ level, message, label, timestamp }) => {
-  const date = new Date(timestamp)
-  const hour = date.getHours()
-  const minutes = date.getMinutes()
-  const seconds = date.getSeconds()
-  return `[${date.toDateString()} at ${hour}:${minutes}:${seconds}] [${label}] ${level}: ${message}`
-})
+  const date = new Date(timestamp);
+  const hour = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+  return `[${date.toDateString()} at ${hour}:${minutes}:${seconds}] [${label}] ${level}: ${message}`;
+});
 
 const infoLogger = createLogger({
   level: 'info',
@@ -38,7 +38,7 @@ const infoLogger = createLogger({
     myFormat
   ),
   transports: transportsCreator('info'),
-})
+});
 
 const errorLogger = createLogger({
   level: 'error',
@@ -49,6 +49,6 @@ const errorLogger = createLogger({
     myFormat
   ),
   transports: transportsCreator('error'),
-})
+});
 
-export { infoLogger, errorLogger }
+export { infoLogger, errorLogger };
