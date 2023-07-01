@@ -1,25 +1,25 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\infos\\.46d4cff82b3e607af4e6762c2769a18cc4cd064c-audit.json",
-  "files": [
-    {
-      "date": 1687016821871,
-      "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\infos\\[2023-06-17-21]-info.log",
-      "hash": "16e602aa3c6e0ba3a4affa33b97bf7db8654392ec9efca54f3775a1c124d8f40"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1687183296580,
-      "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\infos\\[2023-06-19-20]-info.log",
-      "hash": "454e5e3a61864dd358fd617a9b11fe80cfaf747c3d186035815359cff9de6d78"
-    },
-    {
-      "date": 1687194695911,
-      "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\infos\\[2023-06-19-23]-info.log",
-      "hash": "ffbe9e8e999d003461d3e393553ee8135508ac87fa3fd0abc6b932ffb76a0fb7"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\infos\\.46d4cff82b3e607af4e6762c2769a18cc4cd064c-audit.json",
+    "files": [
+        {
+            "date": 1687183296580,
+            "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\infos\\[2023-06-19-20]-info.log",
+            "hash": "454e5e3a61864dd358fd617a9b11fe80cfaf747c3d186035815359cff9de6d78"
+        },
+        {
+            "date": 1687194695911,
+            "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\infos\\[2023-06-19-23]-info.log",
+            "hash": "ffbe9e8e999d003461d3e393553ee8135508ac87fa3fd0abc6b932ffb76a0fb7"
+        },
+        {
+            "date": 1688242013213,
+            "name": "G:\\0001_Project\\project\\ez-node-ts-express-mongoose-boilerplate\\ez-node-ts-express-mongoose-boilerplate\\logs\\winston\\infos\\[2023-07-02-02]-info.log",
+            "hash": "bcee48469c30837c9d8c9dd7beae53cc6bc08780dd78bd167a38736749243af1"
+        }
+    ],
+    "hashType": "sha256"
 }

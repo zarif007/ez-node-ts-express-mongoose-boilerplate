@@ -1,11 +1,11 @@
 import { ErrorRequestHandler } from 'express';
-import envConfig from '../config/envConfig';
-import handleValidationError from '../errors/handleValidationError';
-import { IGenericErrorMessage } from '../interfaces/errors/genericError.interfaces';
-import ApiError from '../errors/ApiError';
-import { errorLogger } from '../shared/logger';
+import envConfig from '../../config/envConfig';
+import handleValidationError from '../../errors/handleValidationError';
+import { IGenericErrorMessage } from '../../interfaces/errors/genericError.interfaces';
+import ApiError from '../../errors/ApiError';
+import { errorLogger } from '../../shared/logger';
 import { ZodError } from 'zod';
-import handleZodError from '../errors/handleZodError';
+import handleZodError from '../../errors/handleZodError';
 
 const envBasedLogger = (error: any) => {
   // eslint-disable-next-line
