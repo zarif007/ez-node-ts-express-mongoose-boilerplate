@@ -2,26 +2,68 @@
 /* eslint-disable no-console */
 const fs = require('fs');
 
+const getCapitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+
 const files = [
   {
     name: 'controller.ts',
-    code: ``,
+    getCode: (folderName) => 
+`/* eslint-disable @typescript-eslint/no-unused-vars */
+import { ${getCapitalize(folderName)}Service } from './${folderName}.service';
+import { I${getCapitalize(folderName)} } from './${folderName}.interface';
+
+
+export const ${getCapitalize(folderName)}Controller = {};
+`,
   },
   {
     name: 'interface.ts',
-    code: ``,
+    getCode: (folderName) => 
+`/* eslint-disable @typescript-eslint/no-unused-vars */
+import { Model, Types } from 'mongoose';
+
+export type I${getCapitalize(folderName)} = {
+
+}
+
+export type I${getCapitalize(folderName)}Model = Model<I${getCapitalize(folderName)}, Record<string, unknown>>;`
   },
   {
     name: 'model.ts',
-    code: ``,
+    getCode: (folderName) => 
+`import { Schema, model } from 'mongoose';
+import { I${getCapitalize(folderName)}, I${getCapitalize(folderName)}Model } from './${folderName}.interface';
+
+const ${getCapitalize(folderName)}Schema = new Schema<I${getCapitalize(folderName)}, I${getCapitalize(folderName)}Model>(
+  {
+
+  }
+);
+
+export const ${getCapitalize(folderName)} = model<I${getCapitalize(folderName)}, I${getCapitalize(folderName)}Model>('${getCapitalize(folderName)}', ${getCapitalize(folderName)}Schema);
+`
   },
   {
     name: 'service.ts',
-    code: '',
+    getCode: (folderName) => 
+`/* eslint-disable @typescript-eslint/no-unused-vars */
+import { I${getCapitalize(folderName)} } from './${folderName}.interface';
+import { ${getCapitalize(folderName)} } from './${folderName}.model';
+
+export const ${getCapitalize(folderName)}Service = {};
+`
   },
   {
     name: 'route.ts',
-    code: ``,
+    getCode: (folderName) => 
+`/* eslint-disable @typescript-eslint/no-unused-vars */
+import { Router } from 'express';
+import { ${getCapitalize(folderName)}Controller } from './${folderName}.controller';
+
+const router = Router();
+
+export const ${getCapitalize(folderName)}Routes = router;
+`
   },
 ];
 
@@ -34,7 +76,7 @@ async function createFolderAndFiles(parentDirectory, folderName) {
     await Promise.all(
       files.map(async file => {
         const filePath = `${parentDirectory}/${folderName}/${folderName}.${file.name}`;
-        await fs.promises.writeFile(filePath, file.code);
+        await fs.promises.writeFile(filePath, file.getCode(folderName));
         console.log(`Created ${filePath}`);
       })
     );
@@ -73,7 +115,7 @@ const start = async () => {
   while (true) {
     const { folderName } = await getUserInput();
 
-    await createFolderAndFiles(parentDirectory, folderName);
+    await createFolderAndFiles(parentDirectory, folderName.toLowerCase());
   }
 };
 
